@@ -33,8 +33,18 @@ export default {
   justify-content: space-between;
 }
 .btn{
-  display: flex;
+  align-self: center;
 
+}
+.btn button{
+  display: flex;
+  background-color: #494744; /* colore di sfondo    */
+  border: 2px solid #0011fc; /* bordo dell'elemento */
+  color: #fff;               /* colore del testo    */
+  font-weight: bold;         /* testo in grassetto  */
+  padding: 0.3rem;                /* padding             */
+  height: 30px;              /* altezza             */
+  width: 100px; 
   /* border: 1px solid blue; */
 }
 .social{

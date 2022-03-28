@@ -37,7 +37,9 @@ h3{
   padding-top: 2rem;
   color: white;
 }
-
+.card img{
+  padding: 0.5rem;
+}
 .bonus .card{
   display: flex;
 }
@@ -49,6 +51,10 @@ h3{
   background-image: url(../assets/img/jumbotron.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bonus{
+  background-color: rgb(0, 83, 207);
 }
 /* h3 {
   margin: 40px 0 0;
