@@ -1,5 +1,5 @@
 # vue-dc-comics
-
+## vue-dc-comics
 ## Project setup
 ```
 npm install
