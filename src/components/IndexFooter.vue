@@ -27,6 +27,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer{
   display: flex; 
   background-color: rgba(41, 41, 61, 0.171);
@@ -49,7 +55,7 @@ export default {
 }
 .social{
   display: flex;
-  
+  align-items: center;
 }
 
 .social img{

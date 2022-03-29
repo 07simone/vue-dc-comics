@@ -2,36 +2,12 @@
   <div class="header">
     <img src="../assets/img/dc-logo.png" alt="">
       <ul>
-          <li>
-            <a href="#">Characters</a> 
+          <li v-for="(element,index) in ListaNav" :key=index :class="{'active' : element.active}">
+            <a :href="element.url"></a>
+            <h3>{{element.name}}</h3>
+            <a href="#"></a> 
           </li>
-          <li>
-            <a href="#">comics</a> 
-          </li>
-          <li>
-            <a href="#">movies</a> 
-          </li>
-          <li>
-            <a href="#">tv</a> 
-          </li>
-          <li>
-            <a href="#">gamese</a> 
-          </li>
-          <li>
-            <a href="#">collectibles</a> 
-          </li>
-          <li>
-            <a href="#">video</a> 
-          </li>
-          <li>
-            <a href="#">fans</a> 
-          </li>
-          <li>
-            <a href="#">news</a> 
-          </li>
-          <li>
-            <a href="#">shop</a> 
-          </li>
+          
         
       </ul>
   </div>
@@ -40,38 +16,114 @@
 <script>
 export default {
   name: 'IndexHeader',
-
+  data:function(){
+    return{
+      ListaNav:[
+        {
+          name: "Characters",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "comics",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "movies",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "tv",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "games",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "collectibles",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "video",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "fans",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "news",
+          active: false,
+          url:"#"
+        },
+        {
+          name: "shop",
+          active: false,
+          url:"#"
+        },
+        
+      ]
+      
+    }
+  }
+    
+  
 }
 </script>
 
 
 <style scoped lang="scss">
 
- .header{
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.header{
   justify-content:space-between ;
   display: flex;
-  height: 100px;
+  height: 15vh;
   
 }
-
-
-li{
-  list-style-type: none;
-  padding: 0.5rem;
-}
 ul {
+  height:100%;
   align-self: center;
   display: flex;  
   justify-content: end 
   
 }
 
-a{
-  text-decoration: none;
+li{
+  list-style-type: none;
+  padding: 0.5rem;
   text-transform: uppercase;
-  color: black;
- 
+  font-size: 0.8rem;
+  align-self: center;
+  line-height: 12vh;
+  a{
+      text-decoration: none;
+      
+      color: black;
+
+    }
+
+    &:active,
+    &.active{
+      border-bottom: 5px solid blue;
+    }
 }
+
+
+
 /* h3 {
   margin: 40px 0 0;
 }

@@ -1,15 +1,17 @@
 <template>
   <div class="main">
-    <section class="content">
-      <h3>-->content goes here</h3>
-    </section>
-    <section class="bonus">
+
+    <MainFilms/>
+    <MainCard/>
+
+   
+  <!--   <section class="bonus">
       <div class="card">
           <img src="../assets/img/buy-comics-digital-comics.png" alt="">
           <h5>digital comics</h5>
       </div>
       
-    </section>
+    </section> -->
     <section class="liste">
       
     </section>
@@ -17,26 +19,31 @@
   </div>
 </template>
 
+
 <script>
+
+import MainFilms from './MainFilms.vue'
+import MainCard from './MainCard.vue'
+
 export default {
   name: 'IndexMain',
-  
+  components: {
+    MainFilms,
+    MainCard,
+    
+  }
 }
 </script>
 
 
 <style scoped lang="scss">
-.main{
-  height: 700px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.content{
-  background-color: black;
-  height: 100px; 
-}
-h3{
-  padding-top: 2rem;
-  color: white;
-}
+
 .card img{
   padding: 0.5rem;
 }
@@ -48,7 +55,7 @@ h3{
   height: 450px;
  /*  background-color: yellow; */
 
-  background-image: url(../assets/img/jumbotron.jpg);
+  background-image: url(../assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
