@@ -1,6 +1,6 @@
 <template>
   <div>
-  <button>Current Series</button> 
+  <button type="button" class="btn btn-primary">Primary</button>
       <div class="MenuTop content">
 
           <!--  cosi passiamo le informazioni attraverso questo metodo

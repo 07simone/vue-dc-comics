@@ -21,7 +21,7 @@ props: ['imageThumb','imagePrice','imageSeries','imageType']
 
 
 .films{
-  
+
   padding: 3rem;
   color: white;
   width: calc(15% - (6rem));

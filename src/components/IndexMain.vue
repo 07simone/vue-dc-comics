@@ -4,7 +4,7 @@
     <MainFilms/>
     <MainCard/>
 
-   
+
   <!--   <section class="bonus">
       <div class="card">
           <img src="../assets/img/buy-comics-digital-comics.png" alt="">
