@@ -20,7 +20,7 @@ import Indexfooter from './components/IndexFooter.vue'
 
 export default {
   name: 'App',
-  components: {
+  components: { 
     IndexHeader,
     IndexMain,
     Indexfooter

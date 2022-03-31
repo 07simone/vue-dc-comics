@@ -1,7 +1,7 @@
 <template>
   <div class="films content">
         <img :src='imageThumb' :alt='imageSeries'>
-        <h3>{{imageSeries}}</h3>
+        <h3>{{imageSeries}}</h3> 
       
   </div>
   
